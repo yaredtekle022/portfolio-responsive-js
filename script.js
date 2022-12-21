@@ -84,7 +84,7 @@ ${projectDatas[1].popupDescriptionTwo}
 
 const popupOverlay = document.querySelector('#overlay');
 
-popupOverlay.innerHTML = `<div id='overlay'></div>`;
+popupOverlay.innerHTML = "<div id='overlay'></div>";
 const openModalButtons = document.querySelectorAll('[data-modal-target]');
 const closeModalButtons = document.querySelectorAll('[data-close-button]');
 const overlay = document.getElementById('overlay');
@@ -95,7 +95,7 @@ function openModal(modal) {
   overlay.classList.toggle('active');
 }
 
-openModalButtons.forEach(button => {
+openModalButtons.forEach((button) => {
   button.addEventListener('click', () => {
     const modal = document.querySelector(button.dataset.modalTarget);
     openModal(modal);
@@ -111,12 +111,12 @@ function closeModal(modal) {
 
 overlay.addEventListener('click', () => {
   const modals = document.querySelectorAll('.modal.active');
-  modals.forEach(modal => {
+  modals.forEach((modal) => {
     closeModal(modal);
   });
 });
 
-closeModalButtons.forEach(button => {
+closeModalButtons.forEach((button) => {
   button.addEventListener('click', () => {
     const modal = button.closest('.modal');
     closeModal(modal);
