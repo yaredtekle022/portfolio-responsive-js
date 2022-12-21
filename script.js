@@ -40,8 +40,8 @@ const projectDatas = [
   popImgSource: "./images/GitHub.svg",
   popupDescriptionTwo: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
   popupList: ["html", "Bootstrap", "Ruby on rails"],
-  popupLiveLink: "",
-  popupSouceLink: ""
+  popupLiveLink: "https://yaredtekle022.github.io/portfolio-responsive-js",
+  popupSouceLink: "https://github.com/yaredtekle022/portfolio-responsive-js"
 }]
 
 const popup = document.querySelector('.modal')
