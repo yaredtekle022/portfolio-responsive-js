@@ -123,8 +123,7 @@ closeModalButtons.forEach((button) => {
   });
 });
 
-//form validation
-
+// Form Validation
 const form = document.querySelector('#form');
 const email = document.getElementById('email');
 const emailError = document.querySelector('.error');
