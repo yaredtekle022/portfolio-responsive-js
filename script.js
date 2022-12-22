@@ -122,3 +122,24 @@ closeModalButtons.forEach((button) => {
     closeModal(modal);
   });
 });
+
+// Form Validation
+const form = document.querySelector('#form');
+const email = document.getElementById('email');
+const emailError = document.querySelector('.error');
+
+form.addEventListener('submit', (event) => {
+  if (email.value.match(/[A-Z]/g)) {
+    event.preventDefault();
+    emailError.textContent = 'Please use lowercases for the email field';
+  } else if (email.validity.valueMissing) {
+    event.preventDefault();
+    emailError.textContent = 'You need to enter an e-mail address.';
+  } else if (email.validity.typeMismatch) {
+    event.preventDefault();
+    emailError.textContent = 'Entered value needs to be an e-mail address.';
+  } else if (email.validity.tooShort) {
+    event.preventDefault();
+    emailError.textContent = 'You need to enter an e-mail address.';
+  }
+});
